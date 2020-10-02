@@ -8,7 +8,7 @@ roll_again = "yes"
 
 while roll_again == "yes" or roll_again == "y":
     print "Rolling the dices
-    print "The values are...."
+    print "The values obtained are...."
     print random.randint(min, max)
     print random.randint(min, max)
 
@@ -22,7 +22,7 @@ def TowerOfHanoi(n , from_rod, to_rod, aux_rod):
         print "Move disk 1 from rod",from_rod,"to rod",to_rod 
         return
     TowerOfHanoi(n-1, from_rod, aux_rod, to_rod) 
-    print "Move disk",n,"from rod",from_rod,"to rod",to_rod 
+    print "Move the disk",n,"from rod",from_rod,"to rod",to_rod 
     TowerOfHanoi(n-1, aux_rod, to_rod, from_rod) 
           
 # Driver code 
